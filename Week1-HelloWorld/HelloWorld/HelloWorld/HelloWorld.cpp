@@ -1,0 +1,17 @@
+// HelloWorld.cpp : 
+//	Prints Hello world to the screen.
+//
+// Paul Talaga
+// Aug 2017
+
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	cout << "Hello World!" << endl;
+    return 0;
+}
+

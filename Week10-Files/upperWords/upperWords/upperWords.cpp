@@ -1,5 +1,9 @@
-// file1.cpp : Defines the entry point for the console application.
-//
+// Name: Paul Talaga
+// Date: Nov 2, 2017
+// Desc: Lets the user enter a filename for analysis.  Returns an error if the
+//		 file was not found.  Then tries to count the number of sentences by
+//		 counting the number of words starting with a capitol letter and those which
+//		 end in a punctuation symbol.
 
 #include "stdafx.h"
 #include <iostream>
@@ -12,7 +16,10 @@ using namespace std;
 int main()
 {
 	ifstream file;
-	file.open("mobydick.txt");
+	string filename;
+	cout << "What file do you want to analyze: " << endl;
+	cin >> filename;
+	file.open(filename);
 	if (!file) {
 		cout << "unable to open file" << endl;
 		return 0;

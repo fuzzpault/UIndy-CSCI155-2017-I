@@ -53,6 +53,11 @@ bool isSorted(int array[], int length) {
 }
 
 
+void numberCounts(int array[], int length) {
+	// Fill me in
+}
+
+
 int main() {
 	cout << "Init w/ ints" << endl;
 	int a1[] = { 1,2,3,4,5 };
@@ -102,24 +107,36 @@ int main() {
 	cout << "1 = " << isSorted(a7, 7) << endl;
 	cout << "0 = " << isSorted(a8, 7) << endl;
 
-	cout << endl << "Histogram int" << endl;
-	histogram(a8, 7);
-	cout << endl;
-	int a9[500] = {};
-	for (int i = 0; i < 500; i++) {
-		a9[i] = (rand() % 11) + (rand() % 11);
-	}
-	histogram(a9, 500);
-	cout << endl;
-	int a10[100] = {};
-	for (int i = 0; i < 100; i++) {
-		a10[i] = (i + i % 7) % 15;
-	}
-	histogram(a10, 100);
-
 	cout << endl << "Histogram char" << endl;
 	char words[] = "the sly fox jumped over the bridge and into the lake.";
 	histogram(words, 54);
 
+	cout << "Number Counts" << endl;
+	numberCounts(a1, 5);
+	cout << "  Should say: 99 found 5 times" << endl << endl;
+
+	numberCounts(a3, 9);
+	cout << "  Should say (in any order): 1 found 2 times" << endl;
+	cout << "                             2 found 2 times" << endl;
+	cout << "                             3 found 1 times" << endl;
+	cout << "                             4 found 1 times" << endl;
+	cout << "                             5 found 1 times" << endl;
+	cout << "                             6 found 1 times" << endl;
+	cout << "                             7 found 1 times" << endl << endl;
+
+	numberCounts(a7, 7);
+	cout << "  Should say (in any order): 1 found 1 times" << endl;
+	cout << "                             2 found 2 times" << endl;
+	cout << "                             3 found 1 times" << endl;
+	cout << "                             5 found 1 times" << endl;
+	cout << "                             10 found 1 times" << endl;
+	cout << "                             100 found 1 times" << endl << endl;
+
+	numberCounts(a8, 7);
+	cout << "  Should say (in any order): 1 found 1 times" << endl;
+	cout << "                             2 found 1 times" << endl;
+	cout << "                             3 found 1 times" << endl;
+	cout << "                             4 found 3 times" << endl;
+	cout << "                             5 found 1 times" << endl << endl;
+
 	return 0;
-}

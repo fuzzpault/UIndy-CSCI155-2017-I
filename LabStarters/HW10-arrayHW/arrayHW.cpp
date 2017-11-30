@@ -39,10 +39,6 @@ int range(int array[], int length) {
 	return 0;
 }
 
-void histogram(int array[], int length) {
-	// Fill me in
-}
-
 void histogram(char array[], int length) {
 	// Fill me in
 }
@@ -51,7 +47,6 @@ bool isSorted(int array[], int length) {
 	// Fill me in
 	return true;
 }
-
 
 void numberCounts(int array[], int length) {
 	// Fill me in
